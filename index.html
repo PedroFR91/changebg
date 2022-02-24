@@ -8,15 +8,19 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container">
-      <span id="1" onclick="color(this)" class="color clr1"></span>
-      <span id="2" onclick="color(this)" class="color clr2"></span>
-      <span onclick="color(this)" class="color clr3"></span>
-      <span onclick="color(this)" class="color clr4"></span>
+    <div class="palette">
+      <div  onclick="color(this)" class="color clr1"></div>
+      <div  onclick="color(this)" class="color clr2"></div>
+      <div onclick="color(this)" class="color clr3"></div>
+      <div onclick="color(this)" class="color clr4"></div>
     </div>
     <div class="parentgrid">
-      <div class="grid" onclick="putcolor(this)"></div>
-      <div id="grid2" class="grid 2"></div>
+      <div class="grid hide"></div>
+      <div id="grid2" class="grid 2" onclick="putcolor1(this)"></div>
+      <div id="grid3" class="grid 3" onclick="putcolor2(this)"></div>
+
+    </div>
+    
     </div>
 
     <script src="./main.js"></script>
